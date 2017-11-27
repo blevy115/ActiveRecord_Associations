@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  starting_location: MyString
+  ending_location: MyString
+  travel_time: 1
+  date: 2017-11-27
+
+two:
+  starting_location: MyString
+  ending_location: MyString
+  travel_time: 1
+  date: 2017-11-27
