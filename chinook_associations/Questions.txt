@@ -1,0 +1,11 @@
+1. a= Album.where('title =?', "Vinicius De Moraes")
+ a.first.tracks.pluck(:name)
+ Result = ["Pela Luz Dos Olhos Teus", "A Bencao E Outros", "Tudo Na Mais Santa Paz", "O Velho E Aflor", "Cotidiano N 2", "Adeus", "So Por Amor", "Meu Pranto Rolou", "Mulher Carioca", "Samba Do Jato", "Oi, La", "Vinicius, Poeta Do Encontro", "Soneto Da Separacao", "Samba Pra Endrigo", "Um Homem Chamado Alfredo"]
+
+ 2. b=Artist.where('name = ?','Philip Glass Ensemble')
+ b.first.albums.pluck(:title)
+ Result = ["Koyaanisqatsi (Soundtrack from the Motion Picture)"]
+
+ 3. c=Playlist.where('name = ?',"Brazilian Music")
+ c.first.tracks.pluck(:name)
+ Result = ["Sozinho", "Odara", "A Luz De Tieta", "Vai Passar", "A Banda", "Garota De Ipanema", "Tarde Em Itapoã", "O Que É O Que É ?", "Voce e Linda", "Sampa", "Admirável Gado Novo", "Açai", "Meu Bem-Querer", "Samurai", "Sina", "Fascinação", "Madalena", "Palco (Live)", "Quanta (Live)", "A Novidade (Live)", "A Novidade", "Filho Maravilha", "Coração De Estudante", "Nos Bailes Da Vida", "Maria, Maria", "Chocolate", "Azul Da Cor Do Mar", "Não Vou Ficar", "Gostava Tanto De Você", "Você", "Não Quero Dinheiro", "Bye, Bye Brasil", "Malandragem", "Esquinas", "O Bêbado e a Equilibrista", "Selassiê", "Taj Mahal", "O Descobridor Dos Sete Mares"]
